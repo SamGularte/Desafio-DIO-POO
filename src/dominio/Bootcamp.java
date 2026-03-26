@@ -11,8 +11,8 @@ public class Bootcamp {
     private String descricao;
     private LocalDate datainicial = LocalDate.now();
     private LocalDate datafinal = datainicial.plusDays(45);
-    private Set<Dev> devsInscritos = new HashSet<>();
-    private Set<Conteudo> conteudos = new LinkedHashSet<>();
+    private final Set<Dev> devsInscritos = new HashSet<>();
+    private final Set<Conteudo> conteudos = new LinkedHashSet<>();
 
     public Bootcamp(){}
 
