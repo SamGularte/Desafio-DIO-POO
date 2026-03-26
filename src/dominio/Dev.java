@@ -11,6 +11,12 @@ public class Dev {
     private final Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
     private final Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
 
+    public Dev(){}
+
+    public Dev(String nome) {
+        this.nome = nome;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -55,5 +61,14 @@ public class Dev {
     @Override
     public int hashCode() {
         return Objects.hash(getNome(), conteudosInscritos, conteudosConcluidos);
+    }
+
+    @Override
+    public String toString() {
+        return "Dev{" +
+                "nome='" + nome + '\'' +
+                ", conteudosInscritos=" + conteudosInscritos +
+                ", conteudosConcluidos=" + conteudosConcluidos +
+                '}';
     }
 }
